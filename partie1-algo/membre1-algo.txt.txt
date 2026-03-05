@@ -1,0 +1,13 @@
+ALGORITHME Membre1
+Variables : stock, ventes, jour
+
+DEBUT
+   Lire stock_initial
+   stock ← stock_initial
+
+   POUR jour ← 1 À 30 FAIRE
+      ventes ← nombre aléatoire entre 1 et 15
+      stock ← stock - ventes
+      Afficher "Jour", jour, "ventes =", ventes, "stock =", stock
+   FIN POUR
+FIN

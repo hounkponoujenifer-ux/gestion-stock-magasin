@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>DevConf 2023 - Inscription</title>
+</head>
+<body>
+  <header style="background-color:#007BFF; color:white; text-align:center; padding:20px;">
+    <h1>DevConf 2023</h1>
+    <p>Inscrivez-vous dès maintenant !</p>
+    <p>Compte à rebours : 10 jours restants</p>
+  </header>
+</body>
+</html>
