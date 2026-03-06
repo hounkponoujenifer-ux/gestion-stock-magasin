@@ -1,32 +1,47 @@
 #include <iostream>
-
 using namespace std;
 
-int main()
-{
+int main() {
+    const int seuilAlerte = 20;
+    const int seuilCommande = 10;
+    const int quantiteCommande = 50;
+
     int stock;
-    int SeuilAlerte = 20;
-    int SeuilCommande =10;
-    int achats, commande, jours = 30;
-    cout << "Stock initial" << endl;
-    cin>>stock;
-    for (int j = 1; j<=jours; j++){
-        achats = rand()%15+1;
-        if ( achats > stock){
-            achats = stock;
+    int commande = 0;
+    bool livraisonDemain = false;
+
+    cout << "Entrez le stock de départ : ";
+    cin >> stock;
+    for (int jour = 1; jour <= 10; jour++) {
+        cout << "\nJour " << jour << " - Stock actuel : " << stock << endl;
+
+        // Vérification du seuil d’alerte
+        if (stock < seuilAlerte) {
+            cout << "Attention : le stock est inférieur au seuil d'alerte (" 
+                 << seuilAlerte << ")" << endl;
         }
-        stock -= achats;
-        if(stock<SeuilCommande &&commande ==0){
-            commande = 50;
-    }
-    if (commande>0){
-        stock += commande;
-        commande = 0;
-        cout<<"Jour" <<j <<"|stock : " <<stock <<"|Achats : " <<achats <<endl;
-        if (stock<SeuilAlerte){
-            cout<<"Alerte : Stock faible ! " <<endl;
+
+        // Vérification du seuil de commande
+        if (stock < seuilCommande) {
+            cout << "Commande automatique déclenchée (" 
+                 << quantiteCommande << " unités)" << endl;
+            commande = quantiteCommande;
+            livraisonDemain = true;
         }
+
+        // Livraison si prévue
+        if (livraisonDemain) {
+            stock += commande;
+            cout << "Livraison reçue : " << commande 
+                 << " produits ajoutés au stock" << endl;
+            livraisonDemain = false;
+        }
+
+        // Exemple : consommation fixe de 5 produits par jour
+        stock -= 5;
     }
+
+    cout << "\nSimulation terminée. Stock final = " << stock << endl;
     return 0;
-    }
 }
+
