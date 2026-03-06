@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 90vh;
+}
+.left{
+    width: 45%;
+    background-color:transparent;
+    border-radius: 30px;
+    left: 20px;
+    position: relative;
+    border: 2px solid #814700;
+    top: 20px;
+}
+.right{
+    width: 50%;
+    height: 770px;
+    background-color:transparent;
+    border-radius: 30px;
+    left: 750px;
+    position: relative;
+    border: 2px solid #814700;
+    bottom: 750px;
+
+}
+h2{
+    text-decoration: underline;
+}
+.name label .atelier label .repas label{
+    display: block;
+}
+
+.repas input{
+    display: block;
+    top: -20px;
+    position: relative;
+    left: 10px;
+}
+.atelier input{
+    display: block;
+    top: -20px;
+    position: relative;
+    left: 10px;
+    
+}
+.name input{
+    display: block;
+    top: -30px;
+    position: relative;
+    left: 70px;
+}
+header {
+    background: #814700;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 5px 0;
+    padding: 8px;
+    border: 2px solid #ccc;
+    width: 50%;
+    outline: none;
+}
+.email{
+    left: 70px;
+    position: relative;
+}
+
+input:hover {
+    border: 1px solid #814700;
+}
+
+button {
+    background: #814700;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 20px;
+}
+#programme h2, #intervenants h2{
+    text-align: center;
+}
+table {
+    width: 95%;
+    border-collapse: collapse;
+    left: 15px;
+    position: relative;
+}
+.intervenants{
+    display: flex;
+    gap: 230px;
+    left: 15px;
+    position: relative;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.input label{
+    left: 2px;
+    position: relative;
+    display: block;
+}
+.input input{
+    display: block;
+    top: -20px;
+    position: relative;
+}
+.images-nom img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    left: 10px;
+    position: relative;
+}
+.images-nom{
+    display: grid;
+}
+.nom{
+    left: 300px;
+    top: -350px;
+    position: relative;
+}
+.nom p{
+    margin-bottom: 120px;
+}
