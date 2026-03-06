@@ -1,0 +1,23 @@
+PARTIE 2 (suite) - EXERCICES PRATIQUES HTML/CSS
+GROUPE 3 - Page d'Inscription à un Événement
+Contexte : Créer une page d'inscription pour une conférence tech "DevConf 2025".
+Consignes :
+•	Bannière avec compte à rebours (simulé en statique)
+•	Formulaire d'inscription avec :
+o	Nom, prénom, email
+o	Type de billet (Standard, VIP, Étudiant) avec boutons radio
+o	Choix des ateliers (cases à cocher)
+o	Options repas (végétarien, sans gluten)
+o	Bouton "S'inscrire"
+•	Section "Programme" (tableau avec horaires et sessions)
+•	Section "Intervenants" (3 intervenants avec photo, nom, sujet)
+Contraintes :
+•	Formulaire bien structuré et stylisé
+•	Validation visuelle (champs requis en rouge si vide)
+•	Design épuré et moderne
+Répartition :
+Membre	Tâche
+Membre 1	HTML et bannière
+Membre 2	Formulaire complet
+Membre 3	Programme, intervenants et styles
+
