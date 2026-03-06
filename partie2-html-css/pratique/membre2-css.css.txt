@@ -1,0 +1,85 @@
+<section id="inscription">
+    <h2>Inscription à DevConf 2025</h2>
+
+    <form>
+
+        <!-- Informations personnelles -->
+        <fieldset>
+            <legend>Informations personnelles</legend>
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <br><br>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <br><br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+        </fieldset>
+
+        <br>
+
+        <!-- Type de billet -->
+        <fieldset>
+            <legend>Type de billet</legend>
+
+            <input type="radio" id="standard" name="billet" value="standard" required>
+            <label for="standard">Standard</label>
+
+            <br>
+
+            <input type="radio" id="vip" name="billet" value="vip">
+            <label for="vip">VIP</label>
+
+            <br>
+
+            <input type="radio" id="etudiant" name="billet" value="etudiant">
+            <label for="etudiant">Étudiant</label>
+        </fieldset>
+
+        <br>
+
+        <!-- Choix des ateliers -->
+        <fieldset>
+            <legend>Choix des ateliers</legend>
+
+            <input type="checkbox" id="atelier1" name="atelier" value="javascript">
+            <label for="atelier1">JavaScript avancé</label>
+
+            <br>
+
+            <input type="checkbox" id="atelier2" name="atelier" value="python">
+            <label for="atelier2">Python pour le Web</label>
+
+            <br>
+
+            <input type="checkbox" id="atelier3" name="atelier" value="devops">
+            <label for="atelier3">Introduction au DevOps</label>
+        </fieldset>
+
+        <br>
+
+        <!-- Options repas -->
+        <fieldset>
+            <legend>Options repas</legend>
+
+            <input type="checkbox" id="vegetarien" name="repas" value="vegetarien">
+            <label for="vegetarien">Végétarien</label>
+
+            <br>
+
+            <input type="checkbox" id="sansgluten" name="repas" value="sans_gluten">
+            <label for="sansgluten">Sans gluten</label>
+        </fieldset>
+
+        <br>
+
+        <!-- Bouton -->
+        <button type="submit">S'inscrire</button>
+
+    </form>
+</section>
