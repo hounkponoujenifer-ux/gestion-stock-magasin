@@ -1,0 +1,24 @@
+DEBUT
+
+CONST seuilAlerte ← 20
+CONST seuilCommande ← 10
+CONST quantiteCommande ← 50
+
+    SI stock < seuilAlerte ALORS
+       AFFICHER "Attention : le stock est inférieur au seuil d'alerte"
+    FIN SI
+
+    SI stock < seuilCommande ALORS
+       AFFICHER "Commande automatique déclenchée"
+
+       commande ← quantiteCommande
+       livraisonDemain ← VRAI
+    FIN SI
+
+    SI livraisonDemain = VRAI ALORS
+       stock ← stock + commande
+       AFFICHER "Livraison reçue : ", commande, " produits ajoutés au stock"
+       livraisonDemain ← FAUX
+   FIN SI
+
+FIN
