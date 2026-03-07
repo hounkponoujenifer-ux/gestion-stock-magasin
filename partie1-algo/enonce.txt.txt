@@ -1,0 +1,15 @@
+PARTIE 1 - EXERCICES ALGORITHME 
+GROUPE 3 - Gestion de Stock Magasin
+Contexte : Un petit magasin gère son stock de produits et passe des commandes automatiques.
+Consignes :
+•	Initialiser un stock de départ (à saisir)
+•	Seuil d'alerte : 20 unités
+•	Seuil de commande automatique : 10 unités
+•	Chaque jour, des clients achètent un nombre aléatoire de produits (entre 1 et 15)
+•	Si le stock passe sous 10, une commande de 50 unités est passée (livraison le lendemain)
+•	Afficher l'évolution du stock sur 30 jours
+Répartition :
+Membre	Tâche
+Membre 1	Générateur aléatoire et boucle journalière
+Membre 2	Conditions de seuil et commandes
+Membre 3	Affichage et calculs finaux
